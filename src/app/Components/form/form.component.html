@@ -1,0 +1,16 @@
+<div class="form-group">
+    <h2>Personas</h2><br>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <label for="nombre">Nombre: </label>
+    <input  type="text" formControlName="nombre" ><br>
+    <label for="apellido" >Apellido</label>
+    <input type="text" formControlName="apellido"><br>
+    <label for="email">Correo</label>
+    <input type="email" formControlName="email"><br>
+    <label for="edad">Edad</label>
+    <input type="number" formControlName="edad"><br>
+    <button type="submit" (click)="charge()">Enviar</button>
+    </form>
+</div>
+<router-outlet></router-outlet>
+    
